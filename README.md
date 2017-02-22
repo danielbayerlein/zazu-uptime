@@ -11,7 +11,7 @@ To show the system uptime simply type `uptime`.
 
 ## Install
 
-Add `danielbayerlein/zazu-uptime` inside of plugins block of your `~/.zazurc.json` file.
+Add `danielbayerlein/zazu-uptime` inside of `plugins` block of your `~/.zazurc.json` file.
 
 ```json
 {
