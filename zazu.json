@@ -2,7 +2,7 @@
   "name": "zazu-uptime",
   "version": "1.0.0",
   "description": "Shows the system uptime",
-  "icon": "icon.png",
+  "icon": "fa-clock-o",
   "blocks": {
     "input": [
       {
@@ -10,8 +10,7 @@
         "type": "PrefixScript",
         "prefix": "uptime",
         "script": "src/index.js",
-        "icon": "fa-clock-o",
-        "connections": []
+        "args": "None"
       }
     ]
   }
