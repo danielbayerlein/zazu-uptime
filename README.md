@@ -9,6 +9,8 @@
 
 To show the system uptime simply type `uptime`.
 
+![screenshot](./screenshot.png)
+
 ## Install
 
 Add `danielbayerlein/zazu-uptime` inside of `plugins` block of your `~/.zazurc.json` file.
