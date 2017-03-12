@@ -22,6 +22,18 @@ const getUptime = () => {
   const minutes = pad2(date.getUTCMinutes());
   const seconds = pad2(date.getUTCSeconds());
 
+  if (days === '00' && hours === '00' && minutes === '00') {
+    return `${seconds}s`;
+  }
+
+  if (days === '00' && hours === '00') {
+    return `${minutes}m ${seconds}s`;
+  }
+
+  if (days === '00') {
+    return `${hours}h ${minutes}m ${seconds}s`;
+  }
+
   return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 };
 
