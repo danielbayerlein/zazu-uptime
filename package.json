@@ -1,6 +1,6 @@
 {
   "name": "zazu-uptime",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Zazu plugin to show the system uptime",
   "main": "src/index.js",
   "private": true,
