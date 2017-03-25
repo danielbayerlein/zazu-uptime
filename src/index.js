@@ -9,12 +9,19 @@ const os = require('os');
 const pad2 = number => `${number < 10 ? 0 : ''}${number}`;
 
 /**
+ * Returns the system uptime in number of seconds
+ *
+ * @return {number} System uptime
+ */
+const getUptime = () => os.uptime();
+
+/**
  * Returns the formatted system uptime
  *
+ * @param  {number} uptime Number to format
  * @return {string} Uptime
  */
-const getUptime = () => {
-  const uptime = os.uptime();
+const format = (uptime) => {
   const date = new Date(uptime * 1000);
 
   const days = pad2(parseInt(uptime / 86400, 10));
@@ -37,6 +44,11 @@ const getUptime = () => {
   return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 };
 
-module.exports = () => () => (
-  new Promise(resolve => resolve([{ title: getUptime() }]))
-);
+module.exports = () => () => {
+  const uptime = getUptime();
+
+  return new Promise(resolve => resolve([{
+    id: `zazu-uptime.${uptime}`,
+    title: format(uptime),
+  }]));
+};
