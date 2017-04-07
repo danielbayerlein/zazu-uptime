@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/danielbayerlein/zazu-uptime.svg?branch=master)](https://travis-ci.org/danielbayerlein/zazu-uptime)
 [![codecov](https://codecov.io/gh/danielbayerlein/zazu-uptime/branch/master/graph/badge.svg)](https://codecov.io/gh/danielbayerlein/zazu-uptime)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Greenkeeper badge](https://badges.greenkeeper.io/danielbayerlein/zazu-uptime.svg)](https://greenkeeper.io/)
 
 ## Usage
 
