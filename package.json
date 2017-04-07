@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "lint": "standard --verbose | snazzy",
-    "test": "npm run lint && jest",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "jest",
     "prepush": "npm test"
   },
   "repository": {
