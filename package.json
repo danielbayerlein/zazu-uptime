@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "private": true,
   "scripts": {
-    "test": "xo && jest",
+    "lint": "standard --verbose | snazzy",
+    "test": "npm run lint && jest",
     "prepush": "npm test"
   },
   "repository": {
@@ -23,10 +24,10 @@
   },
   "homepage": "https://github.com/danielbayerlein/zazu-uptime#readme",
   "devDependencies": {
-    "eslint-config-airbnb-base": "^11.1.3",
     "husky": "^0.13.3",
     "jest": "^19.0.2",
-    "xo": "^0.18.1"
+    "snazzy": "^6.0.0",
+    "standard": "^10.0.1"
   },
   "jest": {
     "bail": true,
@@ -35,10 +36,9 @@
       "**/src/*.js"
     ]
   },
-  "xo": {
-    "extends": "airbnb-base",
-    "envs": [
-      "jest"
-    ]
+  "standard": {
+    "env": {
+      "jest": true
+    }
   }
 }
