@@ -6,7 +6,7 @@ const os = require('os')
  * @param  {number} number Number to pad
  * @return {string}        Padded number
  */
-const pad2 = (number) => `${number < 10 ? 0 : ''}${number}`
+const pad2 = number => `${number < 10 ? 0 : ''}${number}`
 
 /**
  * Returns the system uptime in number of seconds
