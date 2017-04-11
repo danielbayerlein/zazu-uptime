@@ -1,6 +1,6 @@
 jest.mock('os')
 const os = require('os')
-const index = require('../src/')
+const index = require('../../src/')
 
 describe('index.js', () => {
   test('returns an Promise', () => {
