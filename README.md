@@ -1,5 +1,7 @@
 # zazu-uptime
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/danielbayerlein/zazu-uptime.svg)](https://greenkeeper.io/)
+
 > [Zazu](https://github.com/tinytacoteam/zazu) plugin to show the system uptime
 
 [![Build Status](https://travis-ci.org/danielbayerlein/zazu-uptime.svg?branch=master)](https://travis-ci.org/danielbayerlein/zazu-uptime)
