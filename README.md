@@ -27,4 +27,4 @@ Add `danielbayerlein/zazu-uptime` inside of `plugins` block of your `~/.zazurc.j
 
 ## License
 
-Copyright (c) 2017 Daniel Bayerlein. See [LICENSE](./LICENSE.md) for details.
+Copyright (c) 2017-present Daniel Bayerlein. See [LICENSE](./LICENSE.md) for details.
