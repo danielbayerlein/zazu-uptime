@@ -7,8 +7,7 @@
   "scripts": {
     "lint": "standard --verbose | snazzy",
     "test": "npm run lint && npm run test:unit",
-    "test:unit": "jest",
-    "prepush": "npm test"
+    "test:unit": "jest"
   },
   "repository": {
     "type": "git",
@@ -41,5 +40,10 @@
     "env": [
       "jest"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
   }
 }
