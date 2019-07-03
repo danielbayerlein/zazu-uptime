@@ -2,7 +2,7 @@
   "name": "zazu-uptime",
   "version": "1.1.1",
   "description": "Shows the system uptime",
-  "icon": "fa-clock-o",
+  "icon": "far fa-clock",
   "blocks": {
     "input": [
       {
